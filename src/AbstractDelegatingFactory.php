@@ -5,7 +5,6 @@ namespace RebelCode\Modular\Factory;
 use Dhii\Factory\FactoryInterface;
 use Dhii\Modular\Factory\ModuleFactoryExceptionInterface;
 use Dhii\Modular\Factory\CouldNotMakeModuleExceptionInterface;
-use Dhii\Modular\Factory\ModuleFactoryInterface;
 use Dhii\I18n\StringTranslatorAwareTrait;
 use Dhii\I18n\StringTranslatorConsumingTrait;
 use Exception;
@@ -102,6 +101,9 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
      *
      * @since [*next-version*]
      *
+     * @param string    $message The error message.
+     * @param Exception $inner   The inner exception, if any.
+     *
      * @return ModuleFactoryExceptionInterface The new exception.
      */
     abstract protected function _createModuleFactoryException($message, Exception $inner = null);
@@ -111,9 +113,10 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
      *
      * @since [*next-version*]
      *
-     * @param string                      $message The error message.
-     * @param ModuleFactoryInterface|null $factory The module factory associated with the error, if any.
-     * @param Exception                   $inner   The inner exception, if any.
+     * @param string         $message      The error message.
+     * @param string|null    $moduleKey    The service key used to identify the module service, if any.
+     * @param array|null     $moduleConfig The configuration used to attempt module creation, if any.
+     * @param Exception|null $inner        The inner exception, if any.
      *
      * @return CouldNotMakeModuleExceptionInterface The new exception.
      */

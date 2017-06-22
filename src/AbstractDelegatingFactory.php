@@ -92,6 +92,8 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
      *
      * @since [*next-version*]
      *
+     * @param array $config The configuration being used for module creation.
+     *
      * @return string The service ID of the module service.
      */
     abstract protected function _getModuleServiceId($config = array());

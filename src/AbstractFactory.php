@@ -16,7 +16,7 @@ abstract class AbstractFactory
      *
      * Invoke this in actual constructor.
      *
-     * @@since [*next-version*]
+     * @since [*next-version*]
      */
     protected function _construct()
     {

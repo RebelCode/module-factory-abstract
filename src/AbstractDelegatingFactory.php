@@ -44,10 +44,10 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
     protected function _makeModule($config)
     {
         if (!($factory = $this->_getGenericFactory())) {
-            throw $this->_createCouldNotMakeModuleException($this->__('Delegate factory is not set'), null, $config, $e);
+            throw $this->_createCouldNotMakeModuleException($this->__('Delegate factory is not set'), null, $config);
         }
         if (!($key = $this->_getModuleServiceId($config))) {
-            throw $this->_createCouldNotMakeModuleException($this->__('Service key could not be retrieved'), null, $config, $e);
+            throw $this->_createCouldNotMakeModuleException($this->__('Service key could not be retrieved'), null, $config);
         }
 
         try {

@@ -18,12 +18,12 @@ use Exception;
  */
 abstract class AbstractDelegatingFactory extends AbstractFactory
 {
-    /**
+    /*
      * @since [*next-version*]
      */
     use StringTranslatorAwareTrait;
 
-    /**
+    /*
      * @since [*next-version*]
      */
     use StringTranslatorConsumingTrait;

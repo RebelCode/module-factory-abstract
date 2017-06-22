@@ -76,11 +76,11 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
      *
      * @since [*next-version*]
      *
-     * @param FactoryInterfacee $factory The factory.
+     * @param FactoryInterface $factory The factory.
      *
      * @return $this
      */
-    protected function _setGenericFactory(FactoryInterfacee $factory)
+    protected function _setGenericFactory(FactoryInterface $factory)
     {
         $this->genericFactory = $factory;
 

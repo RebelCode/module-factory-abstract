@@ -45,16 +45,16 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
     protected function _makeModule($config)
     {
         if (!($factory = $this->_getGenericFactory())) {
-            throw $this->_createCouldNotMakeModuleException($this->__('Delegate factory is not set'), $this, null, $config, $e);
+            throw $this->_createCouldNotMakeModuleException($this->__('Delegate factory is not set'), null, $config, $e);
         }
         if (!($key = $this->_getModuleServiceId($config))) {
-            throw $this->_createCouldNotMakeModuleException($this->__('Service key could not be retrieved'), $this, null, $config, $e);
+            throw $this->_createCouldNotMakeModuleException($this->__('Service key could not be retrieved'), null, $config, $e);
         }
 
         try {
             $module = $factory->make($key, $config);
         } catch (Exception $e) {
-            throw $this->_createCouldNotMakeModuleException($this->__('Delegate factory raised an exception'), $this, $key, $config, $e);
+            throw $this->_createCouldNotMakeModuleException($this->__('Delegate factory raised an exception'), $key, $config, $e);
         }
 
         return $module;
@@ -104,7 +104,7 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
      *
      * @return ModuleFactoryExceptionInterface The new exception.
      */
-    abstract protected function _createModuleFactoryException($message, ModuleFactoryInterface $factory = null, Exception $inner = null);
+    abstract protected function _createModuleFactoryException($message, Exception $inner = null);
 
     /**
      * Creates a new "could not make new module" exception.
@@ -117,5 +117,5 @@ abstract class AbstractDelegatingFactory extends AbstractFactory
      *
      * @return CouldNotMakeModuleExceptionInterface The new exception.
      */
-    abstract protected function _createCouldNotMakeModuleException($message, ModuleFactoryInterface $factory = null, $moduleKey = null, $moduleConfig = null, Exception $inner = null);
+    abstract protected function _createCouldNotMakeModuleException($message, $moduleKey = null, $moduleConfig = null, Exception $inner = null);
 }

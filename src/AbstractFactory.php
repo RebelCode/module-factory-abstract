@@ -18,7 +18,7 @@ abstract class AbstractFactory
      *
      * @@since [*next-version*]
      */
-    protected function __construct()
+    protected function _construct()
     {
     }
 

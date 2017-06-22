@@ -27,7 +27,9 @@ abstract class AbstractFactory
      *
      * @since [*next-version*]
      *
+     * @param array $config The configuration of the module to make.
+     *
      * @return ModuleInterface the new module
      */
-    abstract protected function _makeModule();
+    abstract protected function _makeModule($config);
 }

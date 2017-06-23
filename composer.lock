@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8efceb1ee14ac20af8eb3cb9a58c80f",
+    "content-hash": "794b5b38887f48a4f6596a83537a39e4",
     "packages": [
         {
             "name": "dhii/data-key-value-aware-interface",
@@ -50,16 +50,16 @@
         },
         {
             "name": "dhii/i18n-helper-base",
-            "version": "dev-task/initial-classes",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/i18n-helper-base.git",
-                "reference": "40ca48986979d4aacdf73a46ab23d0c3cbdc0576"
+                "reference": "10c8b5db9fc8569df3d44c0a0b9329a0a1b7df7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/i18n-helper-base/zipball/40ca48986979d4aacdf73a46ab23d0c3cbdc0576",
-                "reference": "40ca48986979d4aacdf73a46ab23d0c3cbdc0576",
+                "url": "https://api.github.com/repos/Dhii/i18n-helper-base/zipball/10c8b5db9fc8569df3d44c0a0b9329a0a1b7df7c",
+                "reference": "10c8b5db9fc8569df3d44c0a0b9329a0a1b7df7c",
                 "shasum": ""
             },
             "require": {
@@ -92,7 +92,7 @@
                 }
             ],
             "description": "A base for internationalization consumers",
-            "time": "2017-06-22 07:46:21"
+            "time": "2017-06-16 14:40:54"
         },
         {
             "name": "dhii/modular-interface",
@@ -323,7 +323,7 @@
                     "email": "development@dhii.co"
                 }
             ],
-            "time": "2017-06-19T14:11:26+00:00"
+            "time": "2017-06-19 14:11:26"
         },
         {
             "name": "dhii/php-cs-fixer-config",
@@ -571,7 +571,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2016-10-26T18:22:07+00:00"
+            "time": "2016-10-26 18:22:07"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1100,7 +1100,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-06-21T08:07:12+00:00"
+            "time": "2017-06-21 08:07:12"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1912,7 +1912,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02T07:47:27+00:00"
+            "time": "2017-06-02 07:47:27"
         },
         {
             "name": "symfony/filesystem",

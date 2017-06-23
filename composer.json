@@ -13,7 +13,7 @@
     "require": {
         "php": "^5.4 | ^7.0",
         "rebelcode/module-interface": "dev-develop",
-        "dhii/i18n-helper-base": "dev-task/initial-classes",
+        "dhii/i18n-helper-base": "dev-develop",
         "dhii/modular-interface": "dev-task/initial-interface"
     },
     "require-dev": {
